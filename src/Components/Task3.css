@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 50px;
+    justify-content: start;
+  background-color:rgb(35, 62, 66);
+}
