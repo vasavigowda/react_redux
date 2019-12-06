@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
+// import Reducer from '../Store/Reducer';
+import {onAgeUp,onAgeDown} from '../Actions/Task1Action'
 
 class Age extends Component {
 render() {
@@ -12,21 +14,20 @@ render() {
             <button onClick={this.props.onAgeDown}>Age Down</button>
         </div>
         );
-    }
+    };
 }
 
-const mapDispachToProps = (dispatch) => {
-    return {
-        onAgeUp: () => dispatch({ type: "AGE_UP", value: 1 }),
-        onAgeDown: () => dispatch({ type: "AGE_DOWN", value: 1 })
-    };
-};
+// const mapDispachToProps = (dispatch) => {
+//     return {
+//         onAgeUp: () => dispatch({ type: "AGE_UP", value: 1 }),
+//         onAgeDown: () => dispatch({ type: "AGE_DOWN", value: 1 })
+//     };
+// };
 
 const mapStateToProps = (state) => {
-    return {
-        age: state.age
-    };
+    const age=state.Reducer
+    return {age};
 };
 
 
-export default connect(mapStateToProps,mapDispachToProps)(Age);
+export default connect(mapStateToProps,{onAgeUp,onAgeDown})(Age);
