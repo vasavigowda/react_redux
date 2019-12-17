@@ -13,3 +13,7 @@ export const bgpink='bgpink';
 export const bggreen='bggreen';
 export const bgviolet='bgviolet';
 export const bgwhite='bgwhite';
+
+
+export const SAVE='handleChange';
+export const CHECK='CHECK';

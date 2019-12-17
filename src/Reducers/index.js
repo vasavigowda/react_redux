@@ -8,6 +8,7 @@ import Task3Reducer4 from './Task3Reducer4';
 import Task4Reducer1 from './Task4Reducer1';
 import Reducer from './Reducer'
 import Task5Reducer from './Task5Reducer';
+import Task6Reducer from './Task6Reducer';
 
 export default combineReducers({
     Reducer,
@@ -18,6 +19,7 @@ export default combineReducers({
     Task3Reducer3,
     Task3Reducer4,
     Task4Reducer1,
-    Task5Reducer
+    Task5Reducer,
+    Task6Reducer
 
 });
